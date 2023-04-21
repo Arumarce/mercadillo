@@ -1,0 +1,119 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer {
+    min-height: 50px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    min-width: 400px;
+}
+
+body {
+    margin-top: 0.5rem;
+    background-color: rgb(36, 35, 35);
+    font-family: 'Dongle', sans-serif;
+}
+main {
+    min-height: 200px;
+    overflow: auto;
+    background-color: white;
+
+}
+
+header {
+    display: block;
+    background: linear-gradient(rgb(60, 4, 77), rgb(160, 42, 175), rgb(255, 255, 255));;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+}
+
+footer {
+    background: white ;
+}
+
+/* Contenido principal del sitio. Le damos estilo al div que esta dentro del main.
+Solo funciona si el div es hijo directo del main, no funciona si esta
+dentro de otra seccion*/
+main>div {
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 65%;
+}
+
+/* lo mismo hacemos con el aside.  */
+main>aside {
+    min-height: 180px;
+    min-width: 25%;
+    float: left;
+    margin: 0.5rem;
+    width: auto;
+}
+ 
+.secciones {
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.secciones article {
+    margin: 0.5rem;
+}
+
+#imagenlogo {
+    width: 300px;
+}
+
+/*Logo y Menu */
+.encabezado-logo {
+    width: auto;
+    display:inline-block;
+    margin:1rem;
+
+
+}
+.encabezado-nav {
+    left:auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0  0.5rem 1rem;
+}
+
+.encabezado-nav ul {
+    list-style: none;
+}
+
+.encabezado-nav li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem;
+    
+}
+
+.encabezado-nav  a {
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+    letter-spacing: 1px;
+}
+
+.encabezado-nav  a:hover{
+    text-shadow: 0 0 0.2em rgb(159, 111, 236), 0 0 0.2em #87F,
+		0 0 0.2em #87F;
+    color: rgb(134, 234, 241);
+    
+}
+
+
+.encabezado-nav li a {
+    font-size: 1.5rem;
+    background: transparent;   
+}
