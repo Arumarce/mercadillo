@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Roboto:wght@100&family=Teko:wght@500&display=swap" rel="stylesheet">
+<!-- Codigo javascript busqueda -->
+<script src="Javascript/busqueda.js"></script>
+
 </head>
 
 <!-- Cuerpo principal de la página -->
@@ -35,19 +38,20 @@
     <main>
         <div class="contenidoprincipal">
             <section class="secciones">
-                <h3>El Mercadillo</h3>
-                <p>El Mercadillo es una plataforma que te permite crear y administrar tu propia tienda online de manera simple y completa.
-                Creando tu cuenta automáticamente tenes acceso a</p>
+                	<!-- Barra de búsqueda -->
+            <h3>¿Que estas buscando?</h3>
+            <div class="introbusqueda">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <button id="search-btn">Buscar</button>
+                </div>
+            
+                <!-- Resultados de la búsqueda -->
+                <div id="search-results"></div>
+          
 
             </section>
 
-            <section class="secciones">
-                <article>
-                    <div><h3>Lo mas vendido</h3>
-                    <p>Celulares y mas...</p></div>
-                </article>
-
-            </section>
 
      
 
@@ -55,8 +59,18 @@
     </main>
 
     <!-- Pie de página, copyright, etc -->
+    
     <footer>
-
+    
+        <div>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="imagenes/faceicon.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="imagenes/twiticon.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="imagenes/instaicon.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="imagenes/giticon.png" alt=""></a>
+            
+                <br><h3>© Copyright 2023, El Mercadillo!. Todos los derechos reservados.</h3>
+        </div>
     </footer>
+    
 </body>
 </html>
